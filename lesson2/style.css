@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #86878b;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+.section__head{
+    font-weight: 400;
+    text-align: center;    
+}
+.section__head_title{
+    margin-top: 108px;
+    color: #212121;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+}
+.section__head_subtitle{
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 80px;
+}
+.section__head_hr{
+    width: 64px;
+    height: 2px;
+    color: #ff8d2d;
+    margin: 30px auto;
+}
+.section__flex__body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section__flex__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex__card__title{
+    margin: 29px auto;
+    font-size: 17px;
+    font-weight: 700;
+    color: #333;
+    line-height: 24px;
+}
+.section__flex__card:nth-child(2){
+    margin: auto 32px;
+}
+.flex__card__text{
+    text-align: center;
+    width:350px;
+}
+.section__bootstrap{
+    background: #f5f5f5;
+}
+.section__bootstrap__card{
+    text-align: center;
+    width: 343px;    
+}
+.bootstrap__card__head{
+    background: #2f2f2f;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+.bootstrap__head__title{
+    font-size: 20px;
+    line-height: 59px;
+    border-bottom: 1px solid white;
+}
+.bootstrap__head__price{
+    font-family: 'Raleway', sans-serif;
+    font-size: 94px;
+    line-height: 100px;
+    border-bottom: 1px solid white;
+}
+.bootstrap__head__price > span{
+    font-size: 35px;
+}
+.bootstrap__head__text{
+    color: rgba(255,255,255,.5);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 51px;
+    border-bottom: 5px solid #ff8c2c;
+}
+.bootstrap__head__specials{
+    background: #ff8c2c;
+    line-height: 35px;
+
+}
+.bootstrap__card__body{
+    list-style: none; 
+}
+.bootstrap__card__body li{
+    text-transform: uppercase;
+    line-height: 40px;
+    background: white; 
+    margin-bottom: 1px;
+}
+
+.section__grid__body{
+    display: grid;
+}
