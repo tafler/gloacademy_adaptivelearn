@@ -1,74 +1,72 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     outline: 0;
-    box-sizing: border-box;
 }
 body{
-    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #86878b;
 }
 .wrapper{
     width: 80%;
+    max-width: 1140px;
     margin: 0 auto;
+}
+section{
+    padding-top: 105px;
+    padding-bottom: 100px;
 }
 .section__head{
     font-weight: 400;
     text-align: center;    
 }
 .section__head_title{
-    margin-top: 108px;
-    color: #212121;
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
     line-height: 43px;
+    color: #212121;
 }
 .section__head_subtitle{
-    color: #86878b;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
     line-height: 20px;
     margin-bottom: 80px;
 }
 .section__head_hr{
     width: 64px;
     height: 2px;
-    color: #ff8d2d;
+    background-color: #ff8d2d;
     margin: 30px auto;
 }
 .section__flex__body{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 .section__flex__card{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 360px;
 }
 .flex__card__title{
-    margin: 29px auto;
     font-size: 17px;
     font-weight: 700;
-    color: #333;
     line-height: 24px;
+    color: #333;
+    margin: 29px auto;
 }
 .section__flex__card:nth-child(2){
     margin: auto 32px;
-}
-.flex__card__text{
-    text-align: center;
-    width:350px;
 }
 .section__bootstrap{
     background: #f5f5f5;
 }
 .section__bootstrap__card{
-    text-align: center;
     width: 343px;    
+    margin-top: auto;
 }
 .bootstrap__card__head{
     background: #2f2f2f;
@@ -85,7 +83,8 @@ body{
 .bootstrap__head__price{
     font-family: 'Raleway', sans-serif;
     font-size: 94px;
-    line-height: 100px;
+    line-height: 60px;
+    padding-top: 30px;
     border-bottom: 1px solid white;
 }
 .bootstrap__head__price > span{
@@ -95,7 +94,7 @@ body{
     color: rgba(255,255,255,.5);
     font-weight: 400;
     font-style: italic;
-    line-height: 51px;
+    line-height: 50px;
     border-bottom: 5px solid #ff8c2c;
 }
 .bootstrap__head__specials{
@@ -115,4 +114,76 @@ body{
 
 .section__grid__body{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 120px;
+    text-align: left;
 }
+
+.grid__card__text{
+    background: url(img/send.svg) no-repeat;
+    width: 275px;
+    height: 150px;
+    padding: 11px;
+    padding-top: 23px;
+    padding-bottom: 40px;
+    font-style: italic;
+    line-height: 16px;
+}
+.grid__author__avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background: #9a9a9a;
+    float: left;
+    margin-right: 15px;
+}
+.grid__author__name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    padding-top: 15px;
+}
+
+
+@media (max-width: 1200px){
+    .section__grid__body{
+        /* grid-template-columns: 1fr; */
+        grid-gap: 20px;
+    }
+}
+@media (max-width: 990px){
+    .section__grid__body{
+        grid-template-columns: 1fr 1fr;
+    }
+    .section__head_title{
+        font-size: 28px;
+    }
+    body{
+        font-size: 12px;
+    }
+    section{
+        padding-bottom: 70px;
+        padding-top: 60px;
+    }
+}
+@media (max-width: 767px){
+    .section__flex__body{
+        flex-direction: column;
+    }
+    .section__flex__card{
+        max-width: none;
+    }
+    .section__flex__card:nth-child(2),
+    .section__flex__card:nth-child(3)
+    {
+        margin-top: 40px;
+    }
+    .section__grid__body{        
+        grid-template-columns: 1fr;
+    }
+    .section__grid__card{
+        margin: 0 auto;
+
+    }
+}
+
